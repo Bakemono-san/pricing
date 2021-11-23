@@ -1,0 +1,264 @@
+body{
+    height: 100vh;
+    background: no-repeat url('images/bg-top.svg') 100% 10px,no-repeat url('images/bg-bottom.svg') -5% 90%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: hsl(234, 14%, 74%);
+}
+
+
+h1{
+    margin: 0px;
+    color:  hsl(233, 13%, 49%);
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* input{
+    border-radius: 100%;
+    background: white;
+} */
+.switch {
+    margin: 0 10px;
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+
+  input:checked + .slider {
+    background-color: #2196F3;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+.container{
+  margin-top: 6px;
+    display: flex;
+    align-items: center;
+    color: hsl(232, 13%, 33%);
+}
+
+.first{
+    border-radius: 10px 0px 0px 10px;
+    min-height: 320px;
+    padding: 12px 42px;
+    background: white;
+    box-shadow: 1px 1px  hsl(240, 78%, 98%);
+    border: 1px solid  hsl(240, 78%, 98%);
+}
+.first h1{
+  font-size: 24px;
+}
+
+button{
+  position: relative;
+    padding: 8px 32px;
+    border: 1px solid white;
+    color: white;
+    border-radius: 5px;
+    background:   linear-gradient(hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+}
+button:active{
+    background: transparent;
+    color: hsl(236, 72%, 79%);
+    border: 1px solid hsl(236, 72%, 79%);
+}
+.second{
+    background: hsl(237, 63%, 64%);
+    padding: 37px;
+    border-radius: 10px;
+    color: white;
+}
+.second h1{
+    color: white;
+    font-size: 24px;
+}
+.second button{
+    background: white;
+    color: hsl(233, 13%, 49%);
+    padding: 8px 48px;
+}
+.second .trait{
+    background: hsl(240, 78%, 98%);
+}
+
+.second button:active{
+    background: transparent;
+    color: white;
+}
+.third{
+    border-radius: 0px 10px 10px 0px;
+    min-height: 320px;
+    padding: 12px 42px;
+    background: white;
+    border: 1px solid  hsl(240, 78%, 98%);
+}
+.third h1{
+  font-size: 24px;
+}
+#price{
+    font-size: 32px;
+    font-weight: 700;
+    margin: 48 0;
+}
+
+#price1{
+  font-size: 32px;
+  margin: 48 0;
+  font-weight: 700;
+}
+#price2{
+  font-size: 32px;
+  font-weight: 700;
+}
+.trait{
+    margin: 6px;
+    width: 100%;
+    height: 1px;
+    background:  hsl(233, 13%, 49%);
+}
+
+@media screen and (max-width : 700px) {
+  body{
+    background: no-repeat url('images/bg-top.svg') 120% 10px;  
+  }
+  .container{
+    flex-direction: column;
+    height: 70%;
+  }
+
+  #price{
+    margin: 24px 0;
+    font-size: 60px;
+    font-weight: 700;
+  }
+  
+  #price1{
+    margin: 24px 0;
+    font-size: 60px;
+    font-weight: 700;
+  }
+
+  #price2{
+    margin: 24px 0;
+    font-size: 60px;
+    font-weight: 700;
+  }
+
+  .first{
+    margin-bottom: 24px;
+    border-radius: 10px;
+  }
+
+  .second{
+    margin-bottom: 24px;
+  }
+
+  .third{
+    margin-bottom: 24px;
+    border-radius: 10px;
+  }
+}
+
+@media screen and (max-width : 400px) {
+  body{
+    height: 100vh;
+    background: no-repeat url('images/bg-top.svg') 120% 10px;
+    background-size: 200px;
+  }
+
+  .container{
+    flex-direction: column;
+    height: 70%;
+  }
+
+  #price{
+    margin: 24px 0;
+    font-size: 60px;
+    font-weight: 700;
+  }
+  
+  #price1{
+    margin: 24px 0;
+    font-size: 60px;
+    font-weight: 700;
+  }
+
+  #price2{
+    margin: 24px 0;
+    font-size: 60px;
+    font-weight: 700;
+  }
+
+  .first{
+    margin-bottom: 24px;
+    border-radius: 10px;
+  }
+
+  .second{
+    margin-bottom: 24px;
+  }
+
+  .third{
+    margin-bottom: 24px;
+    border-radius: 10px;
+  }
+}
+
